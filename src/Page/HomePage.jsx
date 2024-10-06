@@ -11,7 +11,7 @@ import product_1 from '../assets/Products_image/one.png';
 import About from '../Components/About/About';
 import VideoPlayer from "../components/VideoPlayer/VideoPlayer";
 
-
+// all card image, name and data
 const cardsData = [
   { image: product_1, name: "Name 1", detail: "Detail 1" },
   { image: product_1, name: "Name 2", detail: "Detail 2" },
