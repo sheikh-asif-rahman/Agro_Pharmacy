@@ -1,0 +1,33 @@
+.modal-content {
+    background: #fff; /* White background for the modal */
+    border: 2px solid #000; /* Black border */
+    border-radius: 10px;
+    padding: 20px;
+    display: flex; /* Use flexbox for layout */
+    width: 80%; /* Set width to 80% of the screen */
+    max-width: 800px; /* Max width for larger screens */
+    height: auto; /* Auto height to fit content */
+    min-height: 400px; /* Minimum height for the modal */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.modal-body {
+    display: flex; /* Flex layout for body */
+    padding: 20px; /* Padding for body */
+    height: calc(100% - 60px); /* Adjust this value if needed for the header/footer */
+}
+
+.image-container {
+    flex: 0 0 30%; /* Fixed width of 30% for image container */
+    display: flex; /* Center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.details-container {
+    flex: 1; /* Allow details container to take remaining space */
+    padding: 20px; /* Padding for the details */
+    display: flex;
+    flex-direction: column; /* Stack details vertically */
+    justify-content: center; /* Center vertically */
+}

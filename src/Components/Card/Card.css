@@ -1,0 +1,82 @@
+/* Unique Card CSS */
+.unique-card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+    justify-content: space-between; /* Space out the cards evenly */
+    margin: 20px auto; /* Center the container */
+    width: 90%; /* Adjust the width as needed */
+}
+
+.unique-card {
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    height: 300px; /* Fixed height */
+    width: calc(20% - 20px); /* Default width for 5 cards in a row */
+    position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) { /* For tablet view */
+    .unique-card {
+        width: calc(30% - 20px); /* 3 cards per row */
+        height: 250px; /* Adjust height for tablet */
+    }
+}
+
+@media (max-width: 768px) { /* For mobile view */
+    .unique-card {
+        width: calc(50% - 20px); /* 2 cards per row */
+        height: 200px; /* Adjust height for mobile */
+    }
+}
+
+/* Info container */
+.unique-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Image styling */
+.unique-info img {
+    max-width: 90%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px 10px 0 0;
+}
+
+/* Title styling */
+.unique-card h3 {
+    color: #212ea0;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Detail overlay */
+.unique-consultant-detail {
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 50%; /* Take only 50% of the height */
+    bottom: 0; /* Position it at the bottom */
+    left: 0;
+    background: #1a23a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.4s, padding-top 0.4s;
+}
+
+/* Show details on hover */
+.unique-card:hover .unique-consultant-detail {
+    opacity: 1; /* Make visible */
+}

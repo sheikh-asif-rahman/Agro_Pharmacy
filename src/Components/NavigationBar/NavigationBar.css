@@ -1,0 +1,40 @@
+/* Navbar.css */
+
+.navbar-custom {
+  background-color: #1a23a1; /* Set your desired navbar background color */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar-custom .nav-link {
+  color: #fff; /* Link color */
+}
+
+.navbar-custom .nav-link:hover {
+  color: #d4d4d4; /* Link hover color */
+}
+
+.navbar-custom .navbar-brand {
+  color: #ffffff; /* Brand color */
+  font-family: 'Arial', sans-serif; /* Change to your desired font */
+  font-size: 24px; /* Adjust the brand font size */
+}
+
+/* Offcanvas styles */
+.offcanvas {
+  background-color: #3e4bf8 !important; /* Match the navbar background */
+  color: white; /* Set text color to white */
+  width: 60% !important; /* Set offcanvas width to 60% */
+  max-width: 60% !important; /* Ensure max-width is also set to 60% */
+}
+
+.offcanvas .offcanvas-header {
+  border-bottom: 1px solid rgba(0, 255, 242, 0.2); /* Optional: add a border for separation */
+}
+
+.offcanvas .nav-link {
+  color: white; /* Offcanvas link color */
+}
+
+.offcanvas .nav-link:hover {
+  color: #d4d4d4; /* Offcanvas link hover color */
+}
